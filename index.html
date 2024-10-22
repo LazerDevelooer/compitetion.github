@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomerc</title>
+    
+    <!--Bootstrap File-->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+
+    <!--Css Link-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/glider.css">
+    <link rel="stylesheet" href="css/glider.min.css">
+    <link rel="stylesheet" href="css/addtoCard.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!--Link Icon-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <!--Start Header-->
+    <header class="container-fluid mainNavbar">
+        <div class="container-fluid slideTxt">
+            <i class='bx bx-x-circle' id="btnClose"></i>
+            <div class="container">
+                <marquee behavior="" direction="left" ><h6 class="txt-Scroll">សូមស្វាគមន៍មកកាន់គេហទំព័រលក់ទំនិញ BELTEI E-COMMERCE មានលក់នៅគ្រប់ប្រភេទទំនិញជាច្រើនឈានមុខគេនៅកម្ពុជា | Welcome to the BELTEI E-COMMERCE Shopping Website, which sells all kinds of leading products in Cambodia.</h6></marquee>
+            </div>
+        </div>
+        <!--block logo-->
+        <div class="container-lg nav__bar">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="Image/beltei logo.png" alt="">
+                    <div class="txt-logo">
+                        <i><h6 class="txt-header">BELTEI IU</h6></i>
+                        <i><h6 class="txt-sml">E-Commerce</h6></i>
+                    </div>
+                </div>
+            </a>
+            
+            <!--End block logo-->
+
+            <!--block Search Btn-->
+            <div class="searchBox">
+                <i class='bx bx-search'></i>
+                <input type="text" autofocus>
+                <button class="searchBtn">search</button>
+            </div>
+            <!--End block Search Btn-->
+            
+            <!--Modal display Add to cart-->
+            <div class="cart-modal-overlay">
+                <div class="cart-modal">
+                    <i id="close-btn" class="fas fa-times"></i>
+                        <h1 class="cart-is-empty">Cart is empty</h1>
+                      
+                    <div class="product-rows"></div>
+                        <div class="total">
+                          <h1 class="cart-total">TOTAL</h1>
+                            <span class="total-price">$0</span>
+                              <button class="purchase-btn">PURCHASE</button>
+                        </div>
+                    </div>
+                </div>
+            <!--End Modal Display Add to cart-->
+
+            <!--Add to card btn and count-->
+            <div class="cart-btn">
+                <span class ="cart-quantity">0</span>
+                <i class='bx bx-cart-alt' id="cart"></i>
+            </div>
+            <!--End Add to card btn and count-->
+
+        </div>
+    </header>
+    <!--End Header-->
+
+
+    <!--Start Catagorie and Carousal choose Brand-->
+    <section class="container-lg mainCarousel">
+        <div class="row">
+
+            <!--Start Catagoie -->
+            <div class="col-3 catagoreiList">
+                <div class="brandList">
+                    <div class="brand-hd"><h6 class="brand-hd-txt">Category</h6></div>
+                    <div class="mainBrand">
+                        <div class="row container" style="margin: auto;">
+                            <a href="fashion.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/Household.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">House Hold</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="fashion.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/shopping.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Fashion</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="shoes_bag.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/shoe.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Shoes and Bags</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="Appliances_page.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/electric-appliance.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Home Appliances</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="grocery_page.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/healthy-food.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Grocery and Fruit</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="jewelry_page.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/jewelry.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Jewelry and Nicklack</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="book_page.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/office.jpeg" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Book story and Pen</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="fastfood_page.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/fast-food.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Fast Food and Drink</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="snackfood_page.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/candies.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Snack Food and Sweetie</h6>
+                                </div>
+                            </a>
+                            
+                            <a href="seaFood_page.html" style="padding: 0; color: black;">
+                                <div class="col-12 menu-item">
+                                    <div class="logo-menu">
+                                        <img src="Image/lobster.png" alt="">
+                                    </div>
+                                    <h6 class="txt-memu-item">Sea Food</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Catagorie-->
+
+
+            <!--Start Carousal-->
+            <div class="col">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <!-- <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol> -->
+        
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="Image/slider2.jpg">
+                      </div>
+                      <div class="carousel-item ">
+                        <img class="d-block w-100" src="Image/shirt_banner.webp">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="Image/banner4.jpg">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="Image/slider3.jpg" alt="Third slide">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only"></span>
+                    </a>
+                </div>
+                <div class="row">
+                    <div class="col box-3">
+                        <img src="Image/delivery.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!--End Carousal-->
+
+
+            <!--Start Brand -->
+            <div class="col-3 catagoreiList">
+                <div class="brandList">
+                    <div class="brand-hd"><h6 class="brand-hd-txt">Choose Brand</h6></div>
+                    <div class="mainBrand">
+                        <div class="row container" style="margin: auto;">
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/pedro.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/chanel.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="https://s5.kh1.co/85/8500e57ade33b77826ead7b5df723e4c0d252026.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="https://s5.kh1.co/09/09a19694e5a6cc7de6cc2370c63becb4870395b7.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="https://s5.kh1.co/37/37f67d56ad52a415d0a8633e7c0470fdc87a0dcb.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="https://s6.kh1.co/d5/d56e71ebd1a84337a7906366f05b99c62540a26c.jpeg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="https://s9.kh1.co/0a/0a5ff9e4975c7de9b09b5c4ce11218fc154f0479.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="https://myphsar.com/storage/brand/2022-04-02-6247de9e45cd0.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="https://myphsar.com/storage/brand/2022-04-21-6260ccdb531f1.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="https://myphsar.com/storage/brand/2022-01-27-61f258f0b77f8.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/lv.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/vivo.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/lenovo.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/havanas.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/adidsas.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/applelogo.jpg" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/queen.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/dermjivit.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/tide.png" alt="">
+                            </div>
+                            <div class="col-3 logo-brand" >
+                                <img src="Image/starbuck.png" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--End Brand-->
+            
+        </div>
+    </section>
+
+    <h6 class="title-menu">Catagories</h6>
+
+    <div class="container-lg catagorie-device" >
+        <div class=" wrapperr">
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/Household.png" alt="">
+                </div>
+                <h6 class="txt-icon">House Hold</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/shopping.png" alt="">
+                </div>
+                <h6 class="txt-icon">Fashions</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/shoe.png" alt="">
+                </div>
+                <h6 class="txt-icon">Shoes Bags</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/electric-appliance.png" alt="">
+                </div>
+                <h6 class="txt-icon">Appliances</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/healthy-food.png" alt="">
+                </div>
+                <h6 class="txt-icon">Grocery Fruit</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/jewelry.png" alt="">
+                </div>
+                <h6 class="txt-icon">Jewelry</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/office.jpeg" alt="">
+                </div>
+                <h6 class="txt-icon">Book store</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/fast-food.png" alt="">
+                </div>
+                <h6 class="txt-icon">Fast Food</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/candies.png" alt="">
+                </div>
+                <h6 class="txt-icon">Snack Food</h6>
+            </div>
+            <div class="box-4">
+                <div class="icon-listt">
+                    <img src="Image/lobster.png" alt="">
+                </div>
+                <h6 class="txt-icon">Sea Food</h6>
+            </div>
+        </div>
+    </div>
+    <!--End slide show and catagorie-->
+
+
+    
+    <!-- start feature -->
+    <h6 class="title-menu">Catagories</h6>
+     <section class="container-lg" style="position: relative; top: 10rem;">
+        <div class="slider" reverse="true" style="--width: 120px;--height: 200px;--quantity: 9;">
+            <div class="list">
+                <div class="item" style="--position: 1"><img src="Image/sting.webp" alt=""></div>
+                <div class="item" style="--position: 2"><img src="Image/visa bag.jpg" alt=""></div>
+                <div class="item" style="--position: 3"><img src="Image/drink.jpg" alt=""></div>
+                <div class="item" style="--position: 4"><img src="Image/holween.webp" alt=""></div>
+                <div class="item" style="--position: 5"><img src="Image/confort.jpg" alt=""></div>
+                <div class="item" style="--position: 6"><img src="Image/vanda.jpg" alt=""></div>
+                <div class="item" style="--position: 7"><img src="Image/week dis.webp" alt=""></div>
+                <div class="item" style="--position: 8"><img src="Image/savemoney.webp" alt=""></div>
+                <div class="item" style="--position: 9"><img src="Image/instant.webp" alt=""></div>
+            </div>
+        </div>
+     </section>
+    <!--End feature-->
+    
+
+
+    <!--Start Product Card-->
+    <div class="container-lg mainProduct">
+        <div class="row">
+            <div class="col-12 banner">
+                <img src="Image/banner7.jpg" alt="">
+            </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <h5></h5>
+                    <a href="fashion.html"><h5 class="viewitem">View all</h5></a>
+                </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/jacket.jpeg" alt="">
+                      <h5 class="txtProduct">Men's Casual Jackets</h5>
+                      <span class="product-price">$29.00</span>
+                      <button class="add-to-cart">Add to cart</button>
+                    <div class="starTxt">
+                        <div>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i>
+                            <i class='bx bx-star'></i><br>
+                            <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                            
+                        </div>
+                        <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                            <i class='bx bx-heart'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/Menshirt.jpeg" alt="">
+                    <h5 class="txtProduct">Men's Casual Shirts</h5>
+                    <span class="product-price">$13.00</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/soya.webp" alt="">
+                    <h5 class="txtProduct">អាវសូរិយា រៀបលិច</h5>
+                    <span class="product-price">$12.00</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/phumkomnert.webp" alt="">
+                    <h5 class="txtProduct">អាវយឺត​ ភូមិកំណើតខ្ញុំ </h5>
+                    <span class="product-price">$7.90</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/g-shock.jpeg" alt="">
+                    <h5 class="txtProduct">នាឡិកា G-Shock </h5>
+                    <span class="product-price">$145</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/blackphant.png" alt="">
+                    <h5 class="txtProduct">Black Phant</h5>
+                    <span class="product-price">$20.00</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="container-lg mainProduct">
+        <div class="row">
+            <div class="col-12 banner">
+                <img src="Image/banner5.jpg" alt="">
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <h5></h5>
+                <a href=""><h5 class="viewitem">View all</h5></a>
+            </div>
+        <div class="col-lg-2 col-md-4 col-sml-6 box">
+            <div class="card-1 card">
+                <img class="product-image" src="Image/cookware.jpeg" alt="">
+                <h5 class="txtProduct">Camchef Non-Stick Frypan  </h5>
+                <span class="product-price">$12.90</span>
+                <button class="add-to-cart">Add to cart</button>
+              <div class="starTxt">
+                  <div>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i><br>
+                      <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                  </div>
+                  <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                      <i class='bx bx-heart'></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sml-6 box">
+            <div class="card-1 card">
+                <img class="product-image" src="Image/gasStove.jpg" alt="">
+                <h5 class="txtProduct">Gas Stove</h5>
+                <span class="product-price">$160</span>
+                <button class="add-to-cart">Add to cart</button>
+              <div class="starTxt">
+                  <div>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i><br>
+                      <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                  </div>
+                  <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                      <i class='bx bx-heart'></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sml-6 box">
+            <div class="card-1 card">
+                <img class="product-image" src="Image/shelves.jpg" alt="">
+                <h5 class="txtProduct">FOUR SHELVES FORMICA </h5>
+                <span class="product-price">$27.50</span>
+                <button class="add-to-cart">Add to cart</button>
+              <div class="starTxt">
+                  <div>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i><br>
+                      <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                  </div>
+                  <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                      <i class='bx bx-heart'></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/icecreammake.jpeg" alt="">
+                    <h5 class="txtProduct">Ice cream maker Set*8pcs </h5>
+                    <span class="product-price">$2.40</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/table.jpg" alt="">
+                    <h5 class="txtProduct">STEEL FOLDABLE TABLE</h5>
+                    <span class="product-price">$20.90</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/bin.jpeg" alt="">
+                    <h5 class="txtProduct">Dust Bin Square Golden</h5>
+                    <span class="product-price">$35.50</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-lg mainProduct">
+        <div class="row">
+            <div class="col-12 banner">
+                <img src="Image/banner2.jpg" alt="">
+            </div>
+                <div style="display: flex; justify-content: space-between;">
+                    <h5></h5>
+                    <a href=""><h5 class="viewitem">View all</h5></a>
+                </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/susi.jpg" alt="">
+                    <h5 class="txtProduct">SALMON SET A (200G) </h5>
+                    <span class="product-price">$5.50</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/ជ្រូកខ្វៃ.jpg" alt="">
+                    <h5 class="txtProduct">សាច់ជ្រូកខ្វៃ ២០០ក្រាម </h5>
+                    <span class="product-price">$3.60</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/tongyam.jpg" alt="">
+                    <h5 class="txtProduct">មីតុងយ៉ាំ </h5>
+                    <span class="product-price">$3.00</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/មាន់ដុត.jpg" alt="">
+                    <h5 class="txtProduct">មាន់ដុតទាំងរស់ជាតិអត់ហិល </h5>
+                    <span class="product-price">$7.90</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/icecream.jpg" alt="">
+                    <h5 class="txtProduct">ក្រែមឈីសចំរុះផ្លែឈើ </h5>
+                    <span class="product-price">$1.90</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/spicy.jpg" alt="">
+                    <h5 class="txtProduct"> SPICY MUSHROOM BUN </h5>
+                    <span class="product-price">$1.20</span>
+                    <button class="add-to-cart">Add to cart</button>
+                    <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <div class="container-lg mainProduct">
+        <div class="row">
+            <div class="col-12 banner">
+                <img src="Image/banner3.jpg" alt="">
+            </div>
+            <div style="display: flex; justify-content: space-between;">
+                <h5></h5>
+                <a href=""><h5 class="viewitem">View all</h5></a>
+            </div>
+        <div class="col-lg-2 col-md-4 col-sml-6 box">
+            <div class="card-1 card">
+                <img class="product-image" src="Image/tomato.jpg" alt="">
+                <h5 class="txtProduct">RED CHERRY TOMATO (100G) </h5>
+                <span class="product-price">$0.25</span>
+                <button class="add-to-cart">Add to cart</button>
+              <div class="starTxt">
+                  <div>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i><br>
+                      <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                  </div>
+                  <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                      <i class='bx bx-heart'></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sml-6 box">
+            <div class="card-1 card">
+                <img class="product-image" src="Image/green.webp" alt="">
+                <h5 class="txtProduct">CAPSICUM GREEN (100G) </h5>
+                <span class="product-price">$0.39</span>
+                <button class="add-to-cart">Add to cart</button>
+              <div class="starTxt">
+                  <div>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i><br>
+                      <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                  </div>
+                  <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                      <i class='bx bx-heart'></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-sml-6 box">
+            <div class="card-1 card">
+                <img class="product-image" src="Image/សាច់គោ.jpg" alt="">
+                <h5 class="txtProduct">សាច់គោ ចំឡកក្នុង </h5>
+                <span class="product-price">$4.50</span>
+                <button class="add-to-cart">Add to cart</button>
+              <div class="starTxt">
+                  <div>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i>
+                      <i class='bx bx-star'></i><br>
+                      <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                  </div>
+                  <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                      <i class='bx bx-heart'></i>
+                  </div>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/apple.jpg" alt="">
+                    <h5 class="txtProduct">Apple Red and Green </h5>
+                    <span class="product-price">$5.50</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/orange.jpg" alt="">
+                    <h5 class="txtProduct">ផ្លែក្រូច </h5>
+                    <span class="product-price">$5.50</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sml-6 box">
+                <div class="card-1 card">
+                    <img class="product-image" src="Image/strawberry.jpg" alt="">
+                    <h5 class="txtProduct">ផ្លែស្ត្រប៊ឺរី (454ក្រាម) </h5>
+                    <span class="product-price">$10.90</span>
+                    <button class="add-to-cart">Add to cart</button>
+                  <div class="starTxt">
+                      <div>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i>
+                          <i class='bx bx-star'></i><br>
+                          <span style="position: relative; bottom: 5px; font-size: 10px;">Order Now</span>
+                      </div>
+                      <div style="padding-right: 25px; font-size: 20px; cursor: pointer;">
+                          <i class='bx bx-heart'></i>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!--End Product Card-->
+
+
+<div class="my-5" style="position: relative; top: 100px;">
+    <!-- Footer -->
+    <footer
+            class="text-center text-lg-start text-white"
+            style="background-color: #031a4d"
+            >
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: Links -->
+        <section class="">
+          <!--Grid row-->
+          <div class="row">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">
+                Online Shopping
+              </h6>
+              <p align="justify">
+                Beltei IU E-Commerce is an online shopping app where products are suggested to users based on their interests and users can find products through our advanced search tools , categories and choose brand.
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Customer</h6>
+              <p>
+                <a class="text-white">Payment</a>
+              </p>
+              <p>
+                <a class="text-white">Delivery</a>
+              </p>
+              <p>
+                <a class="text-white">Return & Refund</a>
+              </p>
+              <p>
+                <a class="text-white">FAQs</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+  
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <hr class="w-100 clearfix d-md-none" />
+  
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+              <p><i class="fas fa-home mr-3"></i> Toul sleng street 360 CAM</p>
+              <p><i class="fas fa-envelope mr-3"></i> belteiEcm@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> + 078 638 183</p>
+              <p><i class="fas fa-print mr-3"></i> + 098 638 183</p>
+            </div>
+            <!-- Grid column -->
+  
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+  
+              <!-- Facebook -->
+              <a style="padding: 0; margin: 0;" href="#!" role="button"><i class='bx bxl-facebook-circle' style="font-size: 40px; color: white;"></i></a>
+  
+              <!-- Tiktok -->
+              <a style="padding: 0; margin: 0;" href="#!" role="button"><i class='bx bxl-tiktok' style="font-size: 40px; color: white;"></i></a>
+
+  
+              <!-- Instagram -->
+              <a style="padding: 0; margin: 0;" href="#!" role="button"><i class='bx bxl-instagram' style="font-size: 40px; color: white;"></i></a>
+              
+  
+            </div>
+          </div>
+          <!--Grid row-->
+        </section>
+        <!-- Section: Links -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div
+           class="text-center p-3"
+           style="background-color: rgba(0, 0, 0, 0.2)"
+           >
+        © 2024 Copyright:
+        <a class="text-white" href="index.html"
+           >Beltei IU E-COMMERCE.com</a
+          >
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </div>
+  <!-- End of .container -->
+    
+
+    <!--Link Script-->
+    <script src="Js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script>
+            new Glider(document.querySelector('.glider'), {
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    draggable: true,
+    dots: '.dots',
+    arrows: {
+        prev: '.glider-prev',
+        next: '.glider-next'
+    }
+    });
+     </script>
+</body>
+</html>

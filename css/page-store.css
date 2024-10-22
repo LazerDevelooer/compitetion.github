@@ -1,0 +1,46 @@
+.page-hd{
+    background-color: orange;
+    height: 115px;
+}
+.search-store{
+    margin-top: 15px;
+    width: 100%;
+    height: 38px;
+    border-radius: 50px;
+    border: none;
+    padding-left: 2.5em;
+}
+.search-Pd {
+    display: flex;
+}
+#btnSearch{
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 12px;
+    font-size: 18px;
+}
+.allproduct{
+    display:flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 15px;
+}
+.bx-home{
+    font-size: 2rem;
+    font-weight: 0;
+    color: white;
+    margin-top: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+.listallproduct{
+    font-size: 18px;
+    margin-top: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.listallproduct{
+
+}
